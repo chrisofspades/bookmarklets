@@ -31,7 +31,7 @@ window.sporcleExtensions = {
 			bubbles: true,
 			cancelable: true,
 		});
-		this.lastNames.forEach(name => {
+		this.sporcleExtensions.lastNames.forEach(name => {
 			input.value = name;
 			input.dispatchEvent(event);
 		});
