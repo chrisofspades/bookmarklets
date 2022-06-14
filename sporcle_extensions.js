@@ -1,4 +1,4 @@
-window.sporlceExtensions = {
+window.sporcleExtensions = {
 	lastNames: [
 		"johnson", 
 		"jones", 
