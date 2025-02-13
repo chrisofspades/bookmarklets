@@ -7,5 +7,9 @@ window.listChallengesExtensions = {
 	clickFavorited() {
 		document.querySelectorAll(".item-favorite[data-item-id]:not(.checked)")
 			.forEach(el => el.querySelector(".item-click-area").click());
+	},
+	addClickedToFavorites() {
+		document.querySelectorAll(".list-item.checked[data-item-id]:not(.item-favorite)")
+			.forEach(el => el.querySelector(".item-button-favorite").click());
 	}
 }
