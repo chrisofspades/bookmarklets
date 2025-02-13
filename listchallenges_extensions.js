@@ -5,7 +5,7 @@ window.listChallengesExtensions = {
 		   .attr("href", `https://www.listchallenges.com/lists/containing-item/${jQuery(item).data("item-id")}`)));
 	},
 	clickFavorited() {
-		document.querySelectorAll(".item-favorite[data-item-id]")
+		document.querySelectorAll(".item-favorite[data-item-id]:not(.checked)")
 			.forEach(el => el.querySelector(".item-click-area").click());
 	}
 }
